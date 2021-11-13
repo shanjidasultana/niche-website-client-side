@@ -1,0 +1,86 @@
+[
+    {
+      "name": "Pantene",
+      "price": 300,
+      "details": " Pantene is one of the most trusted hair care brands in the world. Owned by Proctor & Gamble, Pantene has become one of the most widely used hair care brands. It is a classic shampoo brand that offers specially-formulated products for respective hair types. ",
+      "picture": "https://i.ibb.co/gw4jmbJ/pantene-removebg-preview.png"
+    },
+    {
+      "name": "Dove Nourishing Oil Care Shampoo",
+      "price":397,
+      "details": "Dove Nourishing Oil Care shampoo is the much-required solution to frizzy, dry and damaged hair. Its unique combination of weightless argan and coconut oils makes it a top choice among many. ",
+      "picture": "https://i.ibb.co/85yv1b0/dove-removebg-preview.png"
+    },
+    {
+      "name": "Tresemme CLEANSING SHAMPOO 2-IN-1 SHAMPOO ",
+      "price": 345,
+      "details": "2-in-1 Cleansing Shampoo Plus Conditioner is a classic shampoo and conditioner containing a multivitamin formula that hydrates hair where it needs it most.",
+      "picture": "https://i.ibb.co/rxYvJrr/tresseme-removebg-preview.png"
+    },
+    {
+      "name": "Tree to Tub Organic Moroccan Oil Shampoo",
+      "price": 425,
+      "details": "This shampoo will make your hair super soft while at the time same making sure your scalp is not stripped of oils, left irritated, or itchy. The soapberry provides a rich and creamy lather that feels luxurious and rich in your hands.",
+      "picture": "https://i.ibb.co/34ZwRkc/treeto-Tub-removebg-preview.png"
+    },
+    {
+      "name": " Love Beauty and planet Shampoo",
+      "price":600,
+      "details": "The shampoo is very gentle on your scalp and hair but provides a ton of moisture for hair that is dry, damaged, and brittle. We love that although it is meant to give a lot of hydration, it does not weigh down the hair and leaves it light, bouncy, and voluminous.",
+      "picture": "https://i.ibb.co/smGg54y/love-beauty-removebg-preview.png"
+    },
+    {
+      "name": " Majestic Pure Organic Argon Oil Shampoo",
+      "price": 568,
+      "details": "Majestic Argon Oil Shampoo is the ultimate super hydrating shampoo for the most damaged hair. They use a special blend of Moroccan argan oil, avocado oil, jojoba oil, camellia seed oil, botanical keratin, almond oil, and coconut oil.",
+      "picture": "https://i.ibb.co/BPztVNH/Majestic-removebg-preview.png"
+    },
+    {
+      "name": "Bubble & Bee Organic Shampoo",
+      "price": 370,
+      "details": "Bubble & Bee products are always amazing, natural, and completely free of chemicals and toxins and their Really Good Shampoo is no different. This shampoo contains no SLS, synthetic detergents, water, gluten, or GMOs. ",
+      "picture": "https://i.ibb.co/6ykfN0z/bubble-bee-removebg-preview.png"
+    },
+    {
+      "name": "L’Oreal Paris",
+      "price": 240,
+      "details": " L’Oreal Paris can be the best answer for you. Coming with the best quality and natural ingredients, L’Oreal is a worldwide dependable and famous name for hair care product. L’Oreal shampoo has many alternative versions for different types of hair. ",
+      "picture": "https://i.ibb.co/8g04vHP/loreal-paris-removebg-preview.png"
+    },
+    {
+      "name": " Patanjali",
+      "price": 430,
+      "details": "Patanjali shampoo is made from natural ingredients which can take great care of your sensitive hair. Many Bangladeshi women rely on Patanjali shampoo because of its herbal ingredient type and quality as their shampoos provide treatment against diseases and are said to cure hair symptoms like dryness and dandruffs.",
+      "picture": "https://i.ibb.co/5YFyCMM/patanjali-removebg-preview.png"
+    },
+    {
+      "name": " Head & Shoulders",
+      "price": 380,
+      "details": "America based anti-dandruff and non-dandruff shampoo brand Head & Shoulders can be a perfect answer for your query. Head & Shoulders has various types of product for women’s hair care. So you can easily find the best match which is suitable for you.",
+      "picture": "https://i.ibb.co/8BfT3LS/head-shoulder-removebg-preview.png"
+    },
+    {
+      "name": "Nourshing + Coconut Milk Shampoo",
+      "price": 423,
+      "details": "This exclusive blend with coconut milk, egg white proteins and coconut oils helps bring out your hair’s natural strength, elasticity, hydration and balance-all with a shine inspired by the tropics. Is your hair ready for a tropical vacation? Retreat to the islands.",
+      "picture": "https://i.ibb.co/9wy4m0B/ogx-coconut-milk-removebg-preview.png"
+    },
+    {
+      "name": "Garnier Fructis Shampoo",
+      "price": 450,
+      "details": "The range of Garnier Fructis Shampoo products offered by us are fabricated using high quality material under perfect hygienic conditions. These are available to the clients at reasonable prices as per the needs of our esteemed clients.",
+      "picture": "https://i.ibb.co/2MBMyzx/garnier-frutis-removebg-preview.png"
+    },
+    {
+      "name": "Sunsilk stunning black shine shampoo",
+      "price": 340,
+      "details": "The Sunsilk Hairfall Solution Shampoo nourishes your hair to make it strong and also reduces your hair fall. Enriched with soya and vitamin complex, this shampoo strengthens hair, reduces hair breakage, and also nourishes deeply.",
+      "picture": "https://i.ibb.co/rxxKdcM/sunsilk-stunning-black-removebg-preview.png"
+    },
+    {
+      "name": "Kerastase Resistance",
+      "price":200,
+      "details": "Key ingredients creatine and taurine work to strengthen the fibers of the hair and moisturize your scalp. You're getting two key hair loss fighters in this shampoo. ",
+      "picture": "https://i.ibb.co/8K5TL4K/kerastase-resistance-removebg-preview.png"
+    }
+  ]
