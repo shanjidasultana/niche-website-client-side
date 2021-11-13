@@ -29,7 +29,7 @@ const OrderPlaced = ({open,handleCloseModal,name}) => {
         // date:date.toLocaleDateString(),
         productName:name
       }
-      fetch('http://localhost:8000/orders', {
+      fetch('https://aqueous-scrubland-99452.herokuapp.com/orders', {
               method: 'POST',
               headers: {
                   'content-type': 'application/json'

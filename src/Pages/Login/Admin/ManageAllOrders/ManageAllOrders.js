@@ -25,7 +25,7 @@ const ManageAllOrders = () => {
     console.log(orders);
     
     useEffect(()=>{
-      const url=`http://localhost:8000/orders`
+      const url=`https://aqueous-scrubland-99452.herokuapp.com/orders`
         fetch(url, {
           headers: {
               'authorization': `Bearer ${token}`
@@ -38,7 +38,7 @@ const ManageAllOrders = () => {
       console.log(id);
 console.log(status)
 
-        fetch(`http://localhost:8000/orders/${id}?status=${status}`,{
+        fetch(`https://aqueous-scrubland-99452.herokuapp.com/orders/${id}?status=${status}`,{
         method:'PUT',
         headers:{
           'content-type': 'application/json'
@@ -64,7 +64,7 @@ console.log(status)
     const handleDeleteUser = id => {
         const proceed = window.confirm('Are you sure, you want to delete?');
         if (proceed) {
-            const url = `http://localhost:8000/orders/${id}`;
+            const url = `https://aqueous-scrubland-99452.herokuapp.com/orders/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

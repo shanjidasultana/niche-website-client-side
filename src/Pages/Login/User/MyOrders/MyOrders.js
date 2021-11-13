@@ -16,7 +16,7 @@ const MyOrders = () => {
     const {user,token}=useAuth();
     const [orders,setOrders]=useState([])
     useEffect(()=>{
-        const url=`http://localhost:8000/orders?email=${user.email}`
+        const url=`https://aqueous-scrubland-99452.herokuapp.com/orders?email=${user.email}`
           fetch(url, {
             headers: {
                 'authorization': `Bearer ${token}`
@@ -28,7 +28,7 @@ const MyOrders = () => {
       const handleDeleteUser = id => {
         const proceed = window.confirm('Are you sure, you want to delete?');
         if (proceed) {
-            const url = `http://localhost:8000/orders/${id}`;
+            const url = `https://aqueous-scrubland-99452.herokuapp.com/orders/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

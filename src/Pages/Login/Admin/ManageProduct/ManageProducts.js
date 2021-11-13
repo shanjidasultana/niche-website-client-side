@@ -15,7 +15,7 @@ const ManageProducts = () => {
     
     const [products,setProducts]=useState([])
     useEffect(()=>{
-      const url=`http://localhost:8000/products`
+      const url=`https://aqueous-scrubland-99452.herokuapp.com/products`
         fetch(url, {
           headers: {
               'authorization': `Bearer ${token}`
@@ -28,7 +28,7 @@ const ManageProducts = () => {
     const handleDeleteProduct = id => {
         const proceed = window.confirm('Are you sure, you want to delete?');
         if (proceed) {
-            const url = `http://localhost:8000/products/${id}`;
+            const url = `https://aqueous-scrubland-99452.herokuapp.com/products/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

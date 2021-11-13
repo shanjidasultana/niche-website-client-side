@@ -5,7 +5,7 @@ import { Avatar, Card, CardContent, Grid, Rating } from '@mui/material';
 const CustomerReview = (props) => {
     const [ratings,setRatings] =useState([]);
     useEffect(()=>{
-        fetch('http://localhost:8000/reviews')
+        fetch('https://aqueous-scrubland-99452.herokuapp.com/reviews')
         .then(res=>res.json())
         .then(data=>setRatings(data))
     },[])

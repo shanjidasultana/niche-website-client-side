@@ -8,7 +8,7 @@ import ExploreAll from './ExploreAll';
 const Explore = () => {
     const [products,setProducts] =useState([]);
     useEffect(()=>{
-        fetch('http://localhost:8000/products')
+        fetch('https://aqueous-scrubland-99452.herokuapp.com/products')
         .then(res=>res.json())
         .then(data=>setProducts(data))
     },[])

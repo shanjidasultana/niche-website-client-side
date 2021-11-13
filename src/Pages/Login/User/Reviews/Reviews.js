@@ -18,7 +18,7 @@ const Reviews = () => {
     console.log(reviews);
     const handleRating=e=>{
        
-        fetch('http://localhost:8000/reviews', {
+        fetch('https://aqueous-scrubland-99452.herokuapp.com/reviews', {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'

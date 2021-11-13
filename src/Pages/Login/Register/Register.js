@@ -88,7 +88,7 @@ const Register = () => {
                             {isLoading && <CircularProgress/>}
                             {success&& <Snackbar open={success} autoHideDuration={6000} onClose={handleClose}>
                                 <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
-                                This is a success message!
+                                Register Successfully!
                                 </Alert>
                             </Snackbar>}
 

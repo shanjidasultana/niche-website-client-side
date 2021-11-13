@@ -22,7 +22,7 @@ const MakeAdmin = () => {
         e.preventDefault();
         const user={email}
             if(user.email){
-                fetch('http://localhost:8000/users/admin',{
+                fetch('https://aqueous-scrubland-99452.herokuapp.com/users/admin',{
                 method:'PUT',
                 headers:{
                     'authorization':`Bearer ${token}`,

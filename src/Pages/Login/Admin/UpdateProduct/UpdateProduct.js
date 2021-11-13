@@ -16,7 +16,7 @@ const UpdateProduct = () => {
         const handleUpdateProduct = e => {
             console.log(userData);
         
-            const url = `http://localhost:8000/products/${id}`;
+            const url = `https://aqueous-scrubland-99452.herokuapp.com/products/${id}`;
             fetch(url, {
                 method: 'PUT',
                 headers: {

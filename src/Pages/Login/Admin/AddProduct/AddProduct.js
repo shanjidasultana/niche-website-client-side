@@ -14,7 +14,7 @@ const AddProduct = () => {
         }
         const handleFormSubmit=e=>{
         
-                fetch('http://localhost:8000/products', {
+                fetch('https://aqueous-scrubland-99452.herokuapp.com/products', {
                 method: 'POST',
                 headers: {
                     'authorization':`Bearer ${token}`,

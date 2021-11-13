@@ -16,7 +16,7 @@ const DashBoardHome = () => {
     const [orders,setOrders]=useState([])
 
     useEffect(()=>{
-      const url=`http://localhost:8000/orders?email=${user.email}`
+      const url=`https://aqueous-scrubland-99452.herokuapp.com/orders?email=${user.email}`
         fetch(url, {
           headers: {
               'authorization': `Bearer ${token}`
