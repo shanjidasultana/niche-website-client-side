@@ -26,8 +26,8 @@ const Login = () => {
     }
     const handleFormSubmit=e=>{
         loginUser(userData.email,userData.password,history,location)
-        e.preventDefault();
         setSuccess(true)
+        e.preventDefault();
     }
     const handleGoogleSignIn=()=>{
         signInWithGoogle(history,location)
@@ -71,7 +71,7 @@ const Login = () => {
                    </NavLink>
                    {isLoading && <CircularProgress/>}
                    {
-                       user.email && <Snackbar open={success} autoHideDuration={6000} onClose={handleClose}>
+                       success && <Snackbar open={success} autoHideDuration={6000} onClose={handleClose}>
                        <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
                        This is a success message!
                        </Alert>

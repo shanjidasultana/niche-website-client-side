@@ -31,6 +31,8 @@ const Register = () => {
             }
             registerUser(userData.email,userData.password,userData.name,history)
             e.preventDefault();
+              setSuccess(true);  
+
         }
 
         return (

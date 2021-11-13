@@ -88,17 +88,17 @@ const isMatched=useMediaQuery(theme.breakpoints.down('md'))
             : 
             <Box className={classes2.sectionDesktop}>
                 <Link to="/" className={classes1.linkStyle} >
-                    <Button color="inherit"  sx={{mx:7,fontSize:"22px"}} >Home</Button>
+                    <Button color="inherit"  sx={{mr:3,fontSize:"18px"}} >Home</Button>
                 </Link>
                 <Link to="/explore" className={classes1.linkStyle}>
-                    <Button color="inherit" sx={{mr:9,fontSize:"22px"}} >Explore</Button>
+                    <Button color="inherit" sx={{mr:3,fontSize:"18px"}} >Explore</Button>
                 </Link>
                 <Link to="/dashboard" className={classes1.linkStyle}>
-                    <Button color="inherit"  sx={{mr:9,fontSize:"22px"}}>Dashboard</Button>
+                    <Button color="inherit"  sx={{mr:3,fontSize:"18px"}}>Dashboard</Button>
                 </Link>
                {
-                  user?.email? <Button color="inherit" onClick={logoutUser}  sx={{mr:9,fontSize:"20px",bgcolor:''}}>LOGOUT</Button>:<Link to="/login" className={classes1.linkStyle}>
-                  <Button color="inherit"  sx={{mr:9,fontSize:"22px"}}>LOGIN</Button>
+                  user?.email? <Button color="inherit" onClick={logoutUser}  sx={{mr:3,fontSize:"18px",bgcolor:''}}>LOGOUT</Button>:<Link to="/login" className={classes1.linkStyle}>
+                  <Button color="inherit"  sx={{mr:3,fontSize:"18px"}}>LOGIN</Button>
               </Link>
                  
                }
