@@ -37,9 +37,9 @@ const ExploreAll = (props) => {
                 
 
                 <ReadMoreReact text={details}
-                        min={0}
-                        ideal={100}
-                        max={200}
+                        // min={0}
+                        // ideal={100}
+                        // max={200}
                         
                         readMoreText={<ReadMoreIcon sx={{fontSize:"35px",color:"brown"}}>ReadMore</ReadMoreIcon >}/>
                         

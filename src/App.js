@@ -9,9 +9,8 @@ import PrivateRoute from './Pages/Login/Login/PrivateRoute/PrivateRoute';
 import Register from './Pages/Login/Register/Register';
 import NotFound from './Pages/NotFound/NotFound';
 import OrderPlaced from './Pages/OrderPlaced/OrderPlaced';
-import Footer from './Pages/Shared/Footer/Footer';
-// 
-// 
+
+
 function App() {
   return (
     <div className="App">

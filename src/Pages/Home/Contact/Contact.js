@@ -26,7 +26,7 @@ const Contact = () => {
                     <Box height='180px' sx={{backgroundColor:"#f3ffcf",pt:2,my:'auto'}}>
                         <DeliveryDiningIcon  style={{fontSize:'70px',color:"brown"}}/>
                             <Typography variant="h4" >
-                                Safe Home delivery
+                                Safe Home delivery...
                             </Typography>
                             <Typography variant="p">
                                we always think about our customer..their require
@@ -39,7 +39,7 @@ const Contact = () => {
                     <Box  height='180px'sx={{backgroundColor:"#dbffe8",pt:3,my:'auto'}}>
                             <HighQualityIcon style={{fontSize:'70px',color:"brown"}}/>
                             <Typography variant="h4">
-                                Products quality 
+                                Products quality ...
                             </Typography>
                             <Typography variant="p">
                                 We supply 100% qualityful product
@@ -51,7 +51,7 @@ const Contact = () => {
                         <Box  height='180px'sx={{bgcolor:"#f3ffcf",pt:3,my:'auto',}}>
                             <PhoneInTalkIcon style={{fontSize:'70px',color:"brown"}}/>
                             <Typography variant="h4" >
-                            Contact Us Now
+                            Contact Us Now ...
                             </Typography>
                             <Typography variant="p">
                                 +0124536789920
