@@ -92,10 +92,6 @@ console.log(status)
           </TableRow>
         </TableHead>
         <TableBody>
-        
-          {
-            console.log(orders)
-          }
           {orders.map((row) => (
             <TableRow
               key={row._id}

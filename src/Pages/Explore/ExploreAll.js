@@ -1,7 +1,5 @@
 import { Button, Card, CardActions, CardContent, CardMedia, Grid, Typography } from '@mui/material';
 import React from 'react';
-import ReadMoreIcon from '@mui/icons-material/ReadMore';
-import ReadMoreReact from 'read-more-react';
 import OrderPlaced from '../OrderPlaced/OrderPlaced';
 const ExploreAll = (props) => {
     const {price,name,details,picture} =props.product;
@@ -16,7 +14,7 @@ const ExploreAll = (props) => {
     return (
         
         <Grid item xs={12} sm={6} md={4}>
-        <Card sx={{width:330,mb:8,mx:'auto',boxShadow:0,}}>
+        <Card sx={{width:330,mb:8,mx:'auto',boxShadow:0,bgcolor:'#b3fc9d'}}>
                 <CardMedia
             component="img"
             height="460"
@@ -34,17 +32,10 @@ const ExploreAll = (props) => {
                
             </CardContent>
             <CardActions>
-                
-
-                <ReadMoreReact text={details}
-                        // min={0}
-                        // ideal={100}
-                        // max={200}
-                        
-                        readMoreText={<ReadMoreIcon sx={{fontSize:"35px",color:"brown"}}>ReadMore</ReadMoreIcon >}/>
-                        
-            </CardActions>
-           
+            <Typography  variant="subtitle2" component="div">
+                {details}
+            </Typography>
+                </CardActions>
                 <Button  onClick={handleOpenModal}  variant='contained'style={{marginBottom:'19px',backgroundColor:'#91ff35',padding:'5px 5px',fontSize:'18px',fontWeight:'bold'}} >Buy Now</Button>
 
             <OrderPlaced

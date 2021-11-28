@@ -24,13 +24,14 @@ const useStyles1=makeStyles({
    linkStyle:{
     textDecoration:"none",
     color:"brown",
+    marginLeft:'100px'
    }
 })
 
 const useStyles2=makeStyles(theme=>({
     sectionDesktop:{
         display:"none",
-        [theme.breakpoints.up('lg')]:{
+        [theme.breakpoints.up('md')]:{
             display:"flex",
         },
 
@@ -44,14 +45,13 @@ const isMatched=useMediaQuery(theme.breakpoints.down('md'))
    const isMobileMenuOpen=Boolean(mobileMenuAnchor)
    const openMobileMenu=event=>{
        setMobileMenuAnchor(event.currentTarget)
-       console.log(event.currentTarget);
    }
    const closeMobileMenu=()=>{
        setMobileMenuAnchor(null)
    }
     const mobileMenu=(
         <Menu anchorEl={mobileMenuAnchor} id="mobile-Menu" keepMounted open={isMobileMenuOpen}>
-            <MenuItem component={Link} sx={{width:'400px',textAlign:'center'}}  onClick={closeMobileMenu}  to="/">home</MenuItem>
+            <MenuItem component={Link} sx={{width:'400px',}}  onClick={closeMobileMenu}  to="/">home</MenuItem>
             <MenuItem component={Link}  onClick={closeMobileMenu} to="/explore">Explore</MenuItem>
             <MenuItem component={Link}  onClick={closeMobileMenu} to="/dashboard">Dashboard</MenuItem>
             {
@@ -60,7 +60,11 @@ const isMatched=useMediaQuery(theme.breakpoints.down('md'))
             {
                 user?.photoURL && <MenuItem  onClick={closeMobileMenu}> <Avatar  sx={{p:3,mx:"auto",my:5}} aria-label="recipe">
                 <img src={user.photoURL} alt="" />
-            </Avatar></MenuItem>
+            </Avatar>
+            </MenuItem>
+            }
+            {
+              user?.email && <MenuItem onClick={closeMobileMenu}><Typography  sx={{mx:'auto'}} variant="subtitle2" >{user?.displayName}</Typography></MenuItem>   
             }
         </Menu>
     )
@@ -88,26 +92,26 @@ const isMatched=useMediaQuery(theme.breakpoints.down('md'))
             : 
             <Box className={classes2.sectionDesktop}>
                 <Link to="/" className={classes1.linkStyle} >
-                    <Button color="inherit"  sx={{mr:3,fontSize:"18px"}} >Home</Button>
+                    <Button color="inherit"  sx={{mr:8,fontSize:"18px"}} >Home</Button>
                 </Link>
                 <Link to="/explore" className={classes1.linkStyle}>
-                    <Button color="inherit" sx={{mr:3,fontSize:"18px"}} >Explore</Button>
+                    <Button color="inherit" sx={{mr:8,fontSize:"18px"}} >Explore</Button>
                 </Link>
                 <Link to="/dashboard" className={classes1.linkStyle}>
-                    <Button color="inherit"  sx={{mr:3,fontSize:"18px"}}>Dashboard</Button>
+                    <Button color="inherit"  sx={{mr:8,fontSize:"18px"}}>Dashboard</Button>
                 </Link>
                {
-                  user?.email? <Button color="inherit" onClick={logoutUser}  sx={{mr:3,fontSize:"18px",bgcolor:''}}>LOGOUT</Button>:<Link to="/login" className={classes1.linkStyle}>
-                  <Button color="inherit"  sx={{mr:3,fontSize:"18px"}}>LOGIN</Button>
+                  user?.email? <Button color="inherit" onClick={logoutUser}  sx={{mr:8,fontSize:"18px",}}>LOGOUT</Button>:<Link to="/login" className={classes1.linkStyle}>
+                  <Button color="inherit"  sx={{mr:8,fontSize:"18px"}}>LOGIN</Button>
               </Link>
                  
                }
                {
                    user?.email &&  <Box sx={{mt:1,ml:12}}>
-                       <Avatar  sx={{mx:"auto",my:'auto',p:1}} aria-label="recipe">
+                       <Avatar  sx={{ml:10,p:1}} aria-label="recipe">
                    <img src={user.photoURL} alt="" />
                     </Avatar>
-                    <Typography variant="subtitle2" >{user?.displayName}</Typography>
+                    <Typography sx={{ml:10}} variant="subtitle2" >{user?.displayName}</Typography>
                    </Box>
                }
             </Box>

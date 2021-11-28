@@ -22,17 +22,16 @@ const Product = (props) => {
     
     return (
        
-           <Grid item xs={12} sm={6} md={4}>
-            <Card sx={{width:330,mb:8,mx:'auto',boxShadow:0,}}>
+           <Grid item xs={12} sm={6} md={4} >
+            <Card sx={{width:330,mb:8,mx:'auto',boxShadow:0,bgcolor:'#dbf774'}}>
                     <CardMedia
-                    sx={{bgcolor:'#fff9c4',border: 2,borderColor:'#fff176',borderRadius:5,boxShadow:10}}
-                component="img"
-                height="460"
-                image={picture}
-                alt="green iguana"
-                />
+                    component="img"
+                    height="460"
+                    image={picture}
+                    alt="green iguana"
+                    />
 
-                <CardContent>
+                <CardContent sx={{boxShadow:5,bgcolor:'black',color:'white'}}>
                     <Typography gutterBottom variant="h5" component="div">
                     {name}
                     </Typography>

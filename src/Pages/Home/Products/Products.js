@@ -1,4 +1,4 @@
-import { Button, Grid, Typography } from '@material-ui/core';
+import { Button, Grid, Typography,Box } from '@material-ui/core';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Product from '../Product/Product';
@@ -11,10 +11,10 @@ const [products,setProducts] =useState([]);
         .then(data=>setProducts(data.slice(0, 6)))
     },[])
     return (
-        <>
-         <Typography  variant="h3" style={{fontWeight:'bold',marginTop:'50px'}}>Our Products</Typography>
+        <Box sx={{bgcolor:'#dbf774'}}>
+         <Typography  variant="h3" style={{fontWeight:'bold',marginTop:'50px',padding:'40px'}}>Our Products</Typography>
 
-            <Grid container spacing={{ xs: 2, sm: 3, md: 4 }} style={{marginTop:25,mx:'auto',alignItems:'center',justifyContent:'center' }}>
+            <Grid container spacing={{ xs: 1, sm: 3, md: 4 }} style={{marginTop:25,mx:'auto',alignItems:'center',justifyContent:'center' }}>
         {
             products.map(product => <Product
             key={product.name}
@@ -23,11 +23,11 @@ const [products,setProducts] =useState([]);
             
         )}
             </Grid>
-            <Link style={{textDecoration:'none',}} to="/explore">
+            <Link to="/explore" style={{textDecoration:'none',}} >
                 <Button variant='contained'style={{marginBottom:'19px',backgroundColor:'#91ff35',padding:'10px 5px',fontSize:'25px',fontWeight:'bold'}} >Explore More</Button>
 
             </Link>
-        </>
+        </Box>
     );
 };
 

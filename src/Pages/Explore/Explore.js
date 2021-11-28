@@ -1,4 +1,4 @@
-import { Button, Grid, Typography } from '@mui/material';
+import { Button, Grid, Typography,Box } from '@mui/material';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Footer from '../Shared/Footer/Footer';
@@ -12,10 +12,11 @@ const Explore = () => {
         .then(res=>res.json())
         .then(data=>setProducts(data))
     },[])
+    console.log(products);
     return (
        
   
-            <>
+            <Box sx={{bgcolor:'#b3fc9d'}}>
             <Header></Header>
              <Typography variant="h4" style={{margin:'25px auto',fontWeight:'bold'}}>Our Products</Typography>
     
@@ -34,7 +35,7 @@ const Explore = () => {
     
                 </Link>
                 <Footer></Footer>
-            </>
+            </Box>
     );
   
 };

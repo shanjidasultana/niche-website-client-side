@@ -1,5 +1,5 @@
 import { Card, CardContent, CardMedia, Grid, Typography } from '@mui/material';
-import { Box } from '@mui/system';
+import { borderColor, Box } from '@mui/system';
 import React, { useEffect, useState } from 'react';
 import useAuth from '../../../Hooks/useAuth';
 import DeleteIcon from '@mui/icons-material/Delete';
@@ -34,10 +34,8 @@ const ManageProducts = () => {
             })
                 .then(res => res.json())
                 .then(data => {
-                    console.log(data.deletedCount);
-
+                      alert('Are sure You want to delete ?')
                     if (data.deletedCount > 0) {
-                        alert('deleted successfully');
                         const remainingProducts = products.filter(product => product._id !== id);
                         setProducts(remainingProducts);
                     }
@@ -46,20 +44,22 @@ const ManageProducts = () => {
     }
     
     return (
+      <>
+       
         <Grid container spacing={{ xs: 2, sm: 3, md: 4 }} style={{marginTop:25,mx:'auto',alignItems:'center',justifyContent:'center' }}>
         {
             products.map(product => 
             <Grid item xs={12} sm={12} md={6}>
             
-            <Card  key={product.name} sx={{ display: 'flex' }}>
+            <Card  sx={{height:'410px',bgcolor:'#fcfcde',color:'#49e35b',border:4,boxShadow:5}} key={product.name}>
             <Box sx={{ display: 'flex', flexDirection: 'column' }}>
               <CardContent sx={{ flex: '1 0 auto' }}>
-                <Typography component="div" variant="h5">
+                <Typography sx={{color:'#33f502',fontWeight:'bold'}} component="div" variant="h5">
                   {product.name}
-                </Typography>
-                <Typography variant="subtitle1" color="text.secondary" component="div">
-                {product.details.slice(0,100)}
                 </Typography><br/>
+                <Typography  variant="subtitle2" component="div">
+                {product.details}
+                </Typography>
                 <Button sx={{color:'#ab003c'}} onClick={()=>handleDeleteProduct(product._id)} variant="text" >Delete<DeleteIcon sx={{color:'#482880'}}/>
                 </Button>
                 <Link style={{textDecoration:'none'}} to={`/dashboard/update/${product._id}`}>
@@ -74,7 +74,6 @@ const ManageProducts = () => {
             style={{
               width:"150px",
               height:"160px",
-              // borderRadius:"20%"
             }}
               component="img"
               image={product.picture}
@@ -91,6 +90,7 @@ const ManageProducts = () => {
         )}
 
     </Grid>
+    </>
 
     );
 };

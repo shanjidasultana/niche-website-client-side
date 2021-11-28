@@ -11,7 +11,7 @@ import ReviewTop from '../ReviewTop/ReviewTop';
 
 const Home = () => {
     return (
-       <div>
+       <div >
             <Header></Header>
             <Banner></Banner>  
             <Contact></Contact>
