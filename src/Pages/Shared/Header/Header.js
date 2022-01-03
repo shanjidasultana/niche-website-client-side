@@ -70,7 +70,7 @@ const isMatched=useMediaQuery(theme.breakpoints.down('md'))
     const classes1 = useStyles1();
     const classes2 = useStyles2();
     return (
-        <Box sx={{ flexGrow: 1 }} >
+        <Box  >
         <AppBar position="static" >
           <Toolbar className={classes1.header}>
           
