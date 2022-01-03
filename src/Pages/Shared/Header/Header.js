@@ -29,9 +29,9 @@ const useStyles1=makeStyles({
 
 const useStyles2=makeStyles(theme=>({
     sectionDesktop:{
-        display:"none",
-        [theme.breakpoints.up('sm')]:{
-            display:"flex",
+        display:"flex",
+        [theme.breakpoints.down('md')]:{
+            display:"none",
         },
 
     }
@@ -100,7 +100,7 @@ const isMatched=useMediaQuery(theme.breakpoints.down('md'))
                     <Button color="inherit"  sx={{ml:8,fontSize:"18px"}}>Dashboard</Button>
                 </Link>
                {
-                  user?.email? <Button color="inherit" onClick={logoutUser}  sx={{mr:8,fontSize:"18px",}}>LOGOUT</Button>:<Link to="/login" className={classes1.linkStyle}>
+                  user?.email? <Button color="inherit" onClick={logoutUser}  sx={{mr:8,fontSize:"18px",mt:1}}>LOGOUT</Button>:<Link to="/login" className={classes1.linkStyle}>
                   <Button color="inherit"  sx={{ml:6,fontSize:"18px"}}>LOGIN</Button>
               </Link>
                  
@@ -110,7 +110,7 @@ const isMatched=useMediaQuery(theme.breakpoints.down('md'))
                        <Avatar  sx={{ml:5,p:1}} aria-label="recipe">
                    <img src={user.photoURL} alt="" />
                     </Avatar>
-                    <Typography sx={{ml:5}} variant="subtitle2" >{user?.displayName}</Typography>
+                    <Typography sx={{ml:5,mt:1}} variant="subtitle2" >{user?.displayName}</Typography>
                    </Box>
                }
             </Box>
