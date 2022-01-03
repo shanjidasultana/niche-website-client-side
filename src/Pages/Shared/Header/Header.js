@@ -31,7 +31,7 @@ const useStyles2=makeStyles(theme=>({
     sectionDesktop:{
         display:"none",
         [theme.breakpoints.up('md')]:{
-            display:"flex",
+            display:"block",
         },
 
     }
@@ -91,17 +91,17 @@ const isMatched=useMediaQuery(theme.breakpoints.down('md'))
             : 
             <Box className={classes2.sectionDesktop}>
                 <Link to="/" className={classes1.linkStyle} >
-                    <Button color="inherit"  sx={{mr:8,fontSize:"18px"}} >Home</Button>
+                    <Button color="inherit"  sx={{ml:6,fontSize:"18px"}} >Home</Button>
                 </Link>
                 <Link to="/explore" className={classes1.linkStyle}>
-                    <Button color="inherit" sx={{mr:8,fontSize:"18px"}} >Explore</Button>
+                    <Button color="inherit" sx={{ml:6,fontSize:"18px"}} >Explore</Button>
                 </Link>
                 <Link to="/dashboard" className={classes1.linkStyle}>
-                    <Button color="inherit"  sx={{mr:8,fontSize:"18px"}}>Dashboard</Button>
+                    <Button color="inherit"  sx={{ml:6,fontSize:"18px"}}>Dashboard</Button>
                 </Link>
                {
                   user?.email? <Button color="inherit" onClick={logoutUser}  sx={{mr:8,fontSize:"18px",}}>LOGOUT</Button>:<Link to="/login" className={classes1.linkStyle}>
-                  <Button color="inherit"  sx={{mr:8,fontSize:"18px"}}>LOGIN</Button>
+                  <Button color="inherit"  sx={{ml:6,fontSize:"18px"}}>LOGIN</Button>
               </Link>
                  
                }
