@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -30,8 +30,8 @@ const useStyles1=makeStyles({
 const useStyles2=makeStyles(theme=>({
     sectionDesktop:{
         display:"none",
-        [theme.breakpoints.up('md')]:{
-            display:"block",
+        [theme.breakpoints.up('sm')]:{
+            display:"flex",
         },
 
     }
@@ -70,7 +70,7 @@ const isMatched=useMediaQuery(theme.breakpoints.down('md'))
     const classes1 = useStyles1();
     const classes2 = useStyles2();
     return (
-        <Box  >
+        <Box sx={{ flexGrow: 1 }} >
         <AppBar position="static" >
           <Toolbar className={classes1.header}>
           
@@ -91,13 +91,13 @@ const isMatched=useMediaQuery(theme.breakpoints.down('md'))
             : 
             <Box className={classes2.sectionDesktop}>
                 <Link to="/" className={classes1.linkStyle} >
-                    <Button color="inherit"  sx={{ml:6,fontSize:"18px"}} >Home</Button>
+                    <Button color="inherit"  sx={{ml:8,fontSize:"18px"}} >Home</Button>
                 </Link>
                 <Link to="/explore" className={classes1.linkStyle}>
-                    <Button color="inherit" sx={{ml:6,fontSize:"18px"}} >Explore</Button>
+                    <Button color="inherit" sx={{ml:8,fontSize:"18px"}} >Explore</Button>
                 </Link>
                 <Link to="/dashboard" className={classes1.linkStyle}>
-                    <Button color="inherit"  sx={{ml:6,fontSize:"18px"}}>Dashboard</Button>
+                    <Button color="inherit"  sx={{ml:8,fontSize:"18px"}}>Dashboard</Button>
                 </Link>
                {
                   user?.email? <Button color="inherit" onClick={logoutUser}  sx={{mr:8,fontSize:"18px",}}>LOGOUT</Button>:<Link to="/login" className={classes1.linkStyle}>
