@@ -24,7 +24,6 @@ const useStyles1=makeStyles({
    linkStyle:{
     textDecoration:"none",
     color:"brown",
-    // marginLeft:'100px'
    }
 })
 
@@ -51,11 +50,11 @@ const isMatched=useMediaQuery(theme.breakpoints.down('md'))
    }
     const mobileMenu=(
         <Menu  anchorEl={mobileMenuAnchor} id="mobile-Menu" keepMounted open={isMobileMenuOpen}>
-            <MenuItem component={Link} sx={{width:'400px',}}  onClick={closeMobileMenu}  to="/">home</MenuItem><br/>
-            <MenuItem component={Link}  onClick={closeMobileMenu} to="/explore">Explore</MenuItem><br/>
-            <MenuItem component={Link}  onClick={closeMobileMenu} to="/dashboard">Dashboard</MenuItem><br/>
+            <MenuItem component={Link} style={{marginRight:"200px",Color:" goldenrod",fontWeight:"bold",fontSize:'22px'}} onClick={closeMobileMenu}  to="/">home</MenuItem><br/>
+            <MenuItem component={Link} style={{marginRight:"200px",Color:" goldenrod",fontWeight:"bold",fontSize:'22px'}} onClick={closeMobileMenu} to="/explore">Explore</MenuItem><br/>
+            <MenuItem component={Link} style={{marginRight:"200px",Color:" goldenrod",fontWeight:"bold",fontSize:'22px'}} onClick={closeMobileMenu} to="/dashboard">Dashboard</MenuItem><br/>
             {
-             user?.email? <MenuItem  onClick={closeMobileMenu}> <Button onClick={logoutUser}>LOGOUT</Button></MenuItem> : <MenuItem component={Link}  onClick={closeMobileMenu} to="/login">LOGIN</MenuItem>
+             user?.email? <MenuItem  sx={{fontSize:'27px',fontWeight:"bold",}} onClick={closeMobileMenu}> <Button  sx={{fontSize:'22px',fontWeight:"bold",}} onClick={logoutUser}>LOGOUT</Button></MenuItem> : <MenuItem  sx={{fontSize:'22px',fontWeight:"bold",}} component={Link}  onClick={closeMobileMenu} to="/login">LOGIN</MenuItem>
             }
             {
                 user?.photoURL && <MenuItem  onClick={closeMobileMenu}> <Avatar  sx={{p:3,mx:"auto",my:5}} aria-label="recipe">
@@ -64,7 +63,7 @@ const isMatched=useMediaQuery(theme.breakpoints.down('md'))
             </MenuItem>
             }
             {
-              user?.email && <MenuItem onClick={closeMobileMenu}><Typography  sx={{mx:'auto'}} variant="subtitle2" >{user?.displayName}</Typography></MenuItem>   
+              user?.email && <MenuItem   sx={{fontSize:'22px',fontWeight:"bold",}} onClick={closeMobileMenu}><Typography  sx={{mx:'auto'}} variant="subtitle2" >{user?.displayName}</Typography></MenuItem>   
             }
         </Menu>
     )
@@ -77,7 +76,7 @@ const isMatched=useMediaQuery(theme.breakpoints.down('md'))
           
             <img src={shampoLogo} alt=""  width="80"/>
             <Typography variant="h3" component="div"sx={{ml:3,fontFamily:"italic",fontWeight:'bold'}}>
-              <cite>Shivo</cite>
+              <cite style={{ marginRight:'35px'}}>Shivo</cite>
             </Typography>
             {isMatched? <IconButton
               size="large"
