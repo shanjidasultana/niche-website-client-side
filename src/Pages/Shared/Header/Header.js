@@ -24,7 +24,7 @@ const useStyles1=makeStyles({
    linkStyle:{
     textDecoration:"none",
     color:"brown",
-    marginLeft:'100px'
+    // marginLeft:'100px'
    }
 })
 
