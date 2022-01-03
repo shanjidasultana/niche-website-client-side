@@ -106,11 +106,11 @@ const isMatched=useMediaQuery(theme.breakpoints.down('md'))
                  
                }
                {
-                   user?.email &&  <Box sx={{mt:1,ml:12}}>
-                       <Avatar  sx={{ml:10,p:1}} aria-label="recipe">
+                   user?.email &&  <Box>
+                       <Avatar  sx={{ml:5,p:1}} aria-label="recipe">
                    <img src={user.photoURL} alt="" />
                     </Avatar>
-                    <Typography sx={{ml:10}} variant="subtitle2" >{user?.displayName}</Typography>
+                    <Typography sx={{ml:5}} variant="subtitle2" >{user?.displayName}</Typography>
                    </Box>
                }
             </Box>
