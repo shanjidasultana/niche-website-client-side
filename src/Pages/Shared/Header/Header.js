@@ -50,10 +50,10 @@ const isMatched=useMediaQuery(theme.breakpoints.down('md'))
        setMobileMenuAnchor(null)
    }
     const mobileMenu=(
-        <Menu anchorEl={mobileMenuAnchor} id="mobile-Menu" keepMounted open={isMobileMenuOpen}>
-            <MenuItem component={Link} sx={{width:'400px',}}  onClick={closeMobileMenu}  to="/">home</MenuItem>
-            <MenuItem component={Link}  onClick={closeMobileMenu} to="/explore">Explore</MenuItem>
-            <MenuItem component={Link}  onClick={closeMobileMenu} to="/dashboard">Dashboard</MenuItem>
+        <Menu  anchorEl={mobileMenuAnchor} id="mobile-Menu" keepMounted open={isMobileMenuOpen}>
+            <MenuItem component={Link} sx={{width:'400px',}}  onClick={closeMobileMenu}  to="/">home</MenuItem><br/>
+            <MenuItem component={Link}  onClick={closeMobileMenu} to="/explore">Explore</MenuItem><br/>
+            <MenuItem component={Link}  onClick={closeMobileMenu} to="/dashboard">Dashboard</MenuItem><br/>
             {
              user?.email? <MenuItem  onClick={closeMobileMenu}> <Button onClick={logoutUser}>LOGOUT</Button></MenuItem> : <MenuItem component={Link}  onClick={closeMobileMenu} to="/login">LOGIN</MenuItem>
             }
