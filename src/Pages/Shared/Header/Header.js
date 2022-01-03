@@ -100,7 +100,7 @@ const isMatched=useMediaQuery(theme.breakpoints.down('md'))
                     <Button color="inherit"  sx={{ml:8,fontSize:"18px"}}>Dashboard</Button>
                 </Link>
                {
-                  user?.email? <Button color="inherit" onClick={logoutUser}  sx={{mr:8,fontSize:"18px",mt:1}}>LOGOUT</Button>:<Link to="/login" className={classes1.linkStyle}>
+                  user?.email? <Button color="inherit" onClick={logoutUser}  sx={{mr:8,fontSize:"18px",}}>LOGOUT</Button>:<Link to="/login" className={classes1.linkStyle}>
                   <Button color="inherit"  sx={{ml:6,fontSize:"18px"}}>LOGIN</Button>
               </Link>
                  
