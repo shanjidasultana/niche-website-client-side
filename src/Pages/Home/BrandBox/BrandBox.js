@@ -52,7 +52,7 @@ const responsive={
 }
 const items=brandDatas.map(item=>{
     return(
-            <Box sx={{w:1/4,my:9,bgcolor:'#bdbdbd',pt:6,pb:3}}>
+            <Box sx={{w:1/4,my:9,bgcolor:'#f7f3f0 ',pt:4,pb:5}}>
                 <img src={item.logo}
                 width="250px"
                 height="200px"
@@ -64,8 +64,8 @@ const items=brandDatas.map(item=>{
 })
 const BrandBox = () => {
     return (
-        <div sx={{alignItems:'center', }}>
-            <Typography variant="h4" style={{margin:'25px auto',fontWeight:'bold'}} >Our Popular Brands</Typography>
+        <div style={{alignItems:'center',backgroundColor:'#f7f3f0 ',}}>
+            <Typography variant="h3" style={{fontWeight:'bold',paddingTop:'100px'}} >Our Popular Brands</Typography>
                  <AliceCarousel
                     mouseTracking
                     infinite

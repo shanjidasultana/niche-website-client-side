@@ -14,10 +14,10 @@ const ReviewTop = () => {
       };
       
     return (
-        <>
-             <Typography variant="h3" style={{margin:'25px auto',fontWeight:'bold'}}>Customers Reviews</Typography>           
+        <div style={{background:'#e8e7ea'}}>
+             <Typography variant="h3" style={{fontWeight:'bold'}}>Customers Reviews</Typography>           
 
-            <Grid container>
+            <Grid container style={{padding:'80px',}}>
                        <Grid items xs={12} sm={12} md={6} style={{marginTop:"58px"}}>
             <Progress
           
@@ -26,7 +26,7 @@ const ReviewTop = () => {
                 theme={{
                     active: {
                         symbol: "⭐⭐⭐⭐⭐",
-                        color: '#fbc630'
+                        color: '#d3a863'
                     },
                 }}
                 />
@@ -36,7 +36,7 @@ const ReviewTop = () => {
                 theme={{
                     active: {
                         symbol: '⭐⭐⭐⭐',
-                        color: '#fbc630'
+                        color: '#d3a863'
                     },
                 }}
                 />
@@ -47,7 +47,7 @@ const ReviewTop = () => {
                     active: {
                        
                         symbol: '⭐⭐⭐',
-                        color: '#fbc630'
+                        color: '#d3a863'
                     },
                 }}
                 />
@@ -59,7 +59,7 @@ const ReviewTop = () => {
                     active: {
                        
                         symbol: '⭐⭐',
-                        color: '#fbc630'
+                        color: '#d3a863'
                     },
                 }}
                 />
@@ -69,7 +69,7 @@ const ReviewTop = () => {
                 theme={{
                     active: {
                         symbol: '⭐',
-                        color: '#fbc630'
+                        color: '#d3a863'
                     },
                 }}
                 />
@@ -98,18 +98,21 @@ const ReviewTop = () => {
                   labelStyle={defaultLabelStyle}  
                 data={[
                     { title: 'One', value: 10, color: '#E38627' },
+                    { title: 'One', value: 5, color: '#3c566b' },
                     { title: 'Two', value: 15, color: '#C13C37' },
-                    { title: 'Three', value: 20, color: '#6A2135' },
+                    { title: 'Three', value: 12, color: '#6A2135' },
+                    { title: 'Four', value: 4, color: '#969581' },
+                    { title: 'Five', value: 10, color: '#d3a863' },
                 ]}
                 />
             </Grid>
             
         </Grid>
         <Link style={{textDecoration:'none'}} to="/dashboard/review">
-            <Button variant="contained"  sx={{bgcolor:'#3e2723',my:9}}>Write A Review</Button>
+            <Button variant="contained"  sx={{bgcolor:'#3e2723',mt:9,px:5,py:2}}>Write A Review</Button>
         </Link>
        
-        </>
+        </div>
     );
 };
 

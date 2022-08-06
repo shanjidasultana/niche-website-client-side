@@ -12,7 +12,7 @@ const CustomerReview = (props) => {
 
     return (
        
-            <>
+            <div style={{backgroundColor:'#e0e2fb',padding:'70px 20px',}}>
    
     
                 <Grid container spacing={{ xs: 2, sm: 3, md: 4 }} style={{marginTop:25,mx:'auto',alignItems:'center',justifyContent:'center' }}>
@@ -21,7 +21,7 @@ const CustomerReview = (props) => {
                     key={item._id}
                 items xs={12} sm={6} md={4}>
                         <Card sx={{width:330,mb:8,mx:'auto',boxShadow:0,}}>
-                            <CardContent>
+                            <CardContent style={{backgroundColor:'transparent',boxShadow:"3px 4px 7px  black"}}>
                             <Avatar  sx={{p:3,mx:"auto",my:5}} aria-label="recipe">
                                 <img src={item.photoURL} alt="" />
                             </Avatar>
@@ -39,7 +39,7 @@ const CustomerReview = (props) => {
               
             )}
               </Grid>
-            </>
+            </div>
         );
     };
  

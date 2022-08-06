@@ -18,10 +18,9 @@ const contactBg={
 const Contact = () => {
     return (
        <>
-        <Typography variant="h3" style={{margin:'30px auto',fontWeight:'bold'}}>Our Services</Typography>
  
-        <Box style={contactBg}>
-            <Grid container sx={{textAlign:'center',p:5}}  spacing={3}>
+        <Box sx={{my:6}}>
+            <Grid container sx={{textAlign:'center',p:5,}}  spacing={3}>
                     <Grid item xs={12}  md={4}>
                     <Box height='180px' sx={{backgroundColor:"#f3ffcf",pt:2,my:'auto'}}>
                         <DeliveryDiningIcon  style={{fontSize:'70px',color:"brown"}}/>

@@ -11,8 +11,9 @@ const [products,setProducts] =useState([]);
         .then(data=>setProducts(data.slice(0, 6)))
     },[])
     return (
-        <Box sx={{bgcolor:'#dbf774'}}>
+        <Box sx={{bgcolor:'#f7f3f0',pb:8}}>
          <Typography  variant="h3" style={{fontWeight:'bold',marginTop:'50px',padding:'40px'}}>Our Products</Typography>
+         <Typography  variant="body2" style={{marginTop:'5px',color:'gray'}}>Treat yourself to one of our products and  enjoy the long lasting hair</Typography>
 
             <Grid container spacing={{ xs: 1, sm: 3, md: 4 }} style={{marginTop:25,mx:'auto',alignItems:'center',justifyContent:'center' }}>
         {
@@ -24,7 +25,7 @@ const [products,setProducts] =useState([]);
         )}
             </Grid>
             <Link to="/explore" style={{textDecoration:'none',}} >
-                <Button variant='contained'style={{marginBottom:'19px',backgroundColor:'#91ff35',padding:'10px 5px',fontSize:'25px',fontWeight:'bold'}} >Explore More</Button>
+                <Button variant='contained'style={{marginBottom:'19px',padding:'10px 5px',fontSize:'20px',fontWeight:'bold',}} >Explore More</Button>
 
             </Link>
         </Box>

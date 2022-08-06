@@ -90,7 +90,7 @@ const Banner = (props) => {
 const Item = ({name, description,img}) => {
     // const classes= useStyles();
     return (
-        <Box sx={{bgcolor:'#f0f4c3'}}>
+        <Box sx={{bgcolor:'#b3fc9d'}}>
             <Grid container spacing={{ xs: 2, sm: 3, md: 4 }}>
                 <Grid item xs={12} sm={12} md={6}>
                     <img src={img} 
@@ -100,10 +100,10 @@ const Item = ({name, description,img}) => {
                 </Grid>
                 <Grid item xs={12} sm={12} md={6}>
                     <Box sx={{w:1,my:9}} >
-                        <h2 style={{fontWeight:"bold",fontSize:"30px"}}>{name}</h2>
-                        <p style={{width:'350px',fontSize:"25px",margin:"5px auto"}}>{description}</p>
+                        <h2 style={{fontWeight:"bold",fontSize:"30px",color:'white'}}>{name}</h2>
+                        <p style={{width:'350px',fontSize:"25px",margin:"5px auto",color:'white'}}>{description}</p>
                         <NavLink to="/home" style={{textDecoration:"none"}}  >
-                            <Button  variant="contained" sx={{color:"#5d4037",mb:"9" ,p:2,fontWeight:"bold",my:4}} >More</Button>
+                            <Button  variant="contained" style={{color:"#ffffff",backgroundColor:"brown",marginTop:"28px" ,padding:"15px 40px",fontWeight:"bold"}} >VIEW MORE</Button>
                         </NavLink>
 
                     </Box>

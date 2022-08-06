@@ -9,6 +9,7 @@ import ReadMoreReact from 'read-more-react'
 import Typography from '@mui/material/Typography';
 import ReadMoreIcon from '@mui/icons-material/ReadMore';
 import OrderPlaced from '../../OrderPlaced/OrderPlaced';
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 const Product = (props) => {
 
     const {price,name,details,picture} =props.product;
@@ -23,37 +24,42 @@ const Product = (props) => {
     return (
        
            <Grid item xs={12} sm={6} md={4} >
-            <Card sx={{width:330,mb:8,mx:'auto',boxShadow:0,bgcolor:'#dbf774'}}>
+            <Card sx={{width:330,mb:8,mx:'auto',boxShadow:0,bgcolor:'#f7f3f0 '}}>
                     <CardMedia
                     component="img"
-                    height="460"
+                    height="370"
                     image={picture}
                     alt="green iguana"
                     />
 
-                <CardContent sx={{boxShadow:5,bgcolor:'black',color:'white'}}>
-                    <Typography gutterBottom variant="h5" component="div">
+                <CardContent sx={{fontWeight:'bold'}}>
+                    <Typography gutterBottom variant="h5" component="div" sx={{fontWeight:'bold'}}>
                     {name}
                     </Typography>
-                    <Typography gutterBottom variant="h5" component="div">
+                    <Typography gutterBottom variant="h5" style={{color:'brown',fontWeight:'bold'}}component="div">
                      ${price}
                     </Typography>
                    
                 </CardContent>
                 <CardActions>
                     
+                
 
-                    <ReadMoreReact text={details}
-                            min={0}
-                            ideal={100}
-                            max={200}
-                            
-                            readMoreText={<ReadMoreIcon sx={{fontSize:"35px",color:"brown"}}>ReadMore</ReadMoreIcon >}/>
+                   
                             
                 </CardActions>
-                        <Button onClick={handleOpenModal} sx={{bgcolor:'#3e2723',mb:9}} variant='contained' >Buy Now</Button>
+                        <Button onClick={handleOpenModal} sx={{bgcolor:'#3e2723',}} variant='contained' ><AddShoppingCartIcon sx={{ml:2}}/>   ADD TO CART</Button>
 
+                        <div style={{display:'flex',}}>
+                <h1 style={{marginLeft:'72px',fontSize:"20px",fontWeight:'bold',color:'brown'}}>LEARN MORE</h1>    
                 
+                <ReadMoreReact text={details}
+                            min={0}
+                            ideal={0}
+                            max={0}
+                            
+                            readMoreText={<ReadMoreIcon sx={{fontSize:"35px",color:"brown",mt:1,ml:2}}>ReadMore</ReadMoreIcon >}/>
+                </div>
             </Card>
             <OrderPlaced
             handleCloseModal={ handleCloseModal}

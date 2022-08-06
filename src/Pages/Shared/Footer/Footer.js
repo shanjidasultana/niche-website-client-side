@@ -13,6 +13,7 @@ const Footer = () => {
         backgroundColor: 'rgba(45, 58, 74, 0.5)',
         backgroundBlendMode: 'darken, luminosity',
         backgroundSize:'cover',
+        paddingTop:'90px',
         backgroundRepeat:"no-repeat",
         backgroundPosition:'center center',
         color:"white",
@@ -23,7 +24,7 @@ const Footer = () => {
             <Box sx={{flexGrow:1,}} >
         <Grid container style={{marginRight:"50px"}}>
           <Grid item xs={12} md={4} >
-              <Typography varient="h1" sx={{color:'#90caf9',fontWeight:'bold',fontSize:'30px'}}>
+              <Typography varient="h1" sx={{color:'#a52a2a ',fontWeight:'bold',fontSize:'30px'}}>
                     Company
               </Typography>
             <List >
@@ -44,7 +45,7 @@ const Footer = () => {
             </List>
           </Grid>
           <Grid item xs={12} md={4}>
-          <Typography varient="h4" sx={{color:'#90caf9',fontWeight:'bold',fontSize:'30px'}}>
+          <Typography varient="h4" sx={{color:'#a52a2a',fontWeight:'bold',fontSize:'30px'}}>
                    Resources
               </Typography>
             <List >
@@ -64,7 +65,7 @@ const Footer = () => {
           </Grid>
           <Grid item xs={12} md={4}   >
             <Box sx={{display:"flex",flexDirection:"column"}}>
-                <Typography varient="h1" sx={{color:'#90caf9',fontWeight:'bold',fontSize:'30px'}}>
+                <Typography varient="h1" sx={{color:'#a52a2a',fontWeight:'bold',fontSize:'30px'}}>
                     Our NewsLetter
                 </Typography>
                 <Typography varient="subtitle2">
@@ -73,7 +74,7 @@ const Footer = () => {
                 <br />
                 <TextField id="outlined-basic" label="Your email" variant="outlined"  sx={{mr:1}}  />
                 <br /><br />
-                <Button variant="contained"  sx={{mr:1}}>Subscribe</Button>
+                <Button variant="contained"  style={{marginRight:"5px",backgroundColor:"#bf7a5d"}}>Subscribe</Button>
                 <br />
             </Box>                
                 <Box>
@@ -86,7 +87,7 @@ const Footer = () => {
         </Grid>
       </Box>
       <br />
-      <Typography sx={{color:'#76ff03',pb:6}}varient="subtitle2" > &copy;Copyright by Shanjida Sultana,2021</Typography>
+      <Typography varient="subtitle2" sx={{color:'black',pb:6}} > &copy;Copyright by Shanjida Sultana,2021</Typography>
       </Box>
     );
 };

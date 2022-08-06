@@ -5,7 +5,6 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
-import shampoLogo from '../../../images/shampo.png'
 import { Link } from 'react-router-dom';
 import { makeStyles, Menu,useTheme,useMediaQuery } from '@material-ui/core';
 import { MenuItem } from '@mui/material';
@@ -16,7 +15,7 @@ import { Avatar,} from '@mui/material';
 
 const useStyles1=makeStyles({
     header:{
-        backgroundColor: '#ccff90',
+        backgroundColor: '#ffffff',
         color:"brown",
         fontWeight:"bold",
         fontSize:"50px"
@@ -74,10 +73,7 @@ const isMatched=useMediaQuery(theme.breakpoints.down('md'))
         <AppBar position="static" >
           <Toolbar className={classes1.header}>
           
-            <img src={shampoLogo} alt=""  width="80"/>
-            <Typography variant="h3" component="div"sx={{ml:3,fontFamily:"italic",fontWeight:'bold'}}>
-              <cite style={{ marginRight:'35px'}}>Shivo</cite>
-            </Typography>
+           
             {isMatched? <IconButton
               size="large"
               edge="start"
@@ -96,15 +92,10 @@ const isMatched=useMediaQuery(theme.breakpoints.down('md'))
                 <Link to="/explore" className={classes1.linkStyle}>
                     <Button color="inherit" sx={{ml:8,fontSize:"18px"}} >Explore</Button>
                 </Link>
-                <Link to="/dashboard" className={classes1.linkStyle}>
+                <Link className={classes1.linkStyle}>
                     <Button color="inherit"  sx={{ml:8,fontSize:"18px"}}>Dashboard</Button>
                 </Link>
-               {
-                  user?.email? <Button color="inherit" onClick={logoutUser}  sx={{mr:8,fontSize:"18px",}}>LOGOUT</Button>:<Link to="/login" className={classes1.linkStyle}>
-                  <Button color="inherit"  sx={{ml:6,fontSize:"18px"}}>LOGIN</Button>
-              </Link>
-                 
-               }
+              
                {
                    user?.email &&  <Box>
                        <Avatar  sx={{ml:5,p:1}} aria-label="recipe">

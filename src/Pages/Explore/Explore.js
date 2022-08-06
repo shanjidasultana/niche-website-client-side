@@ -2,7 +2,7 @@ import { Button, Grid, Typography,Box } from '@mui/material';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Footer from '../Shared/Footer/Footer';
-import Header from '../Shared/Header/Header';
+import NavBar from '../Shared/Header/NavBar';
 import ExploreAll from './ExploreAll';
 
 const Explore = () => {
@@ -17,7 +17,7 @@ const Explore = () => {
        
   
             <Box sx={{bgcolor:'#b3fc9d'}}>
-            <Header></Header>
+            <NavBar></NavBar>
              <Typography variant="h4" style={{margin:'25px auto',fontWeight:'bold'}}>Our Products</Typography>
     
                 <Grid container spacing={{ xs: 2, sm: 3, md: 4 }} style={{marginTop:25,mx:'auto',alignItems:'center',justifyContent:'center' }}>

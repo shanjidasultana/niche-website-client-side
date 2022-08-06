@@ -36,14 +36,15 @@ import IsoIcon from '@mui/icons-material/Iso';
 const drawerWidth = 220;
 const useStyles1=makeStyles({
   header:{
-      backgroundColor: '#a5f794',
-      color:"brown",
+      backgroundColor: '#a3e66a',
+      color:"#a52a2a",
+      paddingLeft:"20px",
       fontWeight:"bold",
       fontSize:"50px"
   },
  linkStyle:{
   textDecoration:"none",
-  color:'black',
+  color:'#a52a2a',
   fontSize:'58px',
   fontWeight:'bold'
  }
@@ -95,7 +96,7 @@ const classes1 = useStyles1();
       <AppBar
         position="fixed"
         sx={{
-          bgcolor:'#a3e66a',
+          bgcolor:'#1f5156 ',
           width: { sm: `calc(100% - ${drawerWidth}px)` },
           ml: { sm: `${drawerWidth}px` },
         }}

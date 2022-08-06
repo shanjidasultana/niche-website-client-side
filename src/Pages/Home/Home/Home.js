@@ -8,11 +8,13 @@ import Banner from '../Banner/Banner';
 import Footer from '../../Shared/Footer/Footer';
 import CustomerReview from '../CustomerReview/CustomerReview';
 import ReviewTop from '../ReviewTop/ReviewTop';
+import NavBar from '../../Shared/Header/NavBar';
 
 const Home = () => {
     return (
        <div >
-            <Header></Header>
+            {/* <Header></Header> */}
+            <NavBar/>
             <Banner></Banner>  
             <Contact></Contact>
             <Products></Products>

@@ -16,17 +16,19 @@ const ExploreAll = (props) => {
         <Grid item xs={12} sm={6} md={4}>
         <Card sx={{width:330,mb:8,mx:'auto',boxShadow:0,bgcolor:'#b3fc9d'}}>
                 <CardMedia
+                // style={{filter:' drop-shadow(0 0 0.75rem green)'}}
             component="img"
-            height="460"
+            // height="460"
             image={picture}
             alt="green iguana"
+            
             />
 
             <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography gutterBottom variant="h6" component="div">
                 {name}
                 </Typography>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography gutterBottom variant="h6" component="div">
                  ${price}
                 </Typography>
                
